@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowDown, Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Hero = () => {
@@ -67,13 +67,15 @@ const Hero = () => {
             <span className="text-sm text-muted-foreground uppercase tracking-wider">Find me on</span>
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Twitter, href: "#", label: "Twitter" },
+                { icon: Github, href: "https://github.com/johnson98101", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/devin-patterson-153356169", label: "LinkedIn" },
+                { icon: FileText, href: "https://jumpshare.com/share/daw8G5uTgxeowhJJhmkB", label: "Resume" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-lg bg-secondary text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                   aria-label={label}
                 >
