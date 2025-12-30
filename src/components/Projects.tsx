@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, Github, X } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -110,14 +110,10 @@ const Projects = () => {
                 {/* Quick actions */}
                 <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
-                    href={project.githubUrl}
-                    className="w-10 h-10 flex items-center justify-center rounded-lg bg-background/80 backdrop-blur-sm text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-                    aria-label="View on GitHub"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                  <a
                     href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                     aria-label="View live site"
                   >
@@ -162,9 +158,9 @@ const Projects = () => {
 
       {/* Project Details Modal */}
       <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-        <DialogContent className="max-w-3xl bg-card border-border p-0 overflow-hidden">
+        <DialogContent className="max-w-3xl max-h-[90vh] bg-card border-border p-0 overflow-hidden">
           {selectedProject && (
-            <>
+            <div className="overflow-y-auto max-h-[90vh]">
               {/* Modal Image */}
               <div className="relative aspect-video overflow-hidden">
                 <img
@@ -208,15 +204,9 @@ const Projects = () => {
                 {/* Actions */}
                 <div className="flex gap-4 pt-2">
                   <a
-                    href={selectedProject.githubUrl}
-                    onClick={(e) => e.stopPropagation()}
-                    className="flex items-center gap-2 px-5 py-2.5 bg-secondary text-secondary-foreground rounded-lg hover:bg-secondary/80 transition-colors font-medium"
-                  >
-                    <Github className="w-5 h-5" />
-                    View Code
-                  </a>
-                  <a
                     href={selectedProject.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
                     className="flex items-center gap-2 px-5 py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
                   >
@@ -225,7 +215,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </>
+            </div>
           )}
         </DialogContent>
       </Dialog>
