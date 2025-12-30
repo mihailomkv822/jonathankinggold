@@ -1,4 +1,4 @@
-import { Github, Heart, Linkedin, Twitter } from "lucide-react";
+import { Github, Heart, Linkedin, FileText } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,13 +15,15 @@ const Footer = () => {
           {/* Social links */}
           <div className="flex gap-4">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Twitter, href: "#", label: "Twitter" },
+              { icon: Github, href: "https://github.com/johnson98101", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/devin-patterson-153356169", label: "LinkedIn" },
+              { icon: FileText, href: "https://jumpshare.com/share/daw8G5uTgxeowhJJhmkB", label: "Resume" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
                 aria-label={label}
               >
