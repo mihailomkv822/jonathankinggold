@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
@@ -48,7 +49,7 @@ const Navigation = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            AC<span className="text-primary">.</span>
+            JK<span className="text-primary">.</span>
           </a>
 
           {/* Desktop navigation */}
