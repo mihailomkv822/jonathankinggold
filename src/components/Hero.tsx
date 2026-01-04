@@ -32,7 +32,7 @@ const Hero = () => {
             style={{ animationDelay: "0.3s" }}
           >
             <span className="block text-foreground">I'm</span>
-            <span className="block text-gradient glow-text">Alex Chen</span>
+            <span className="block text-gradient glow-text">Jonathan King</span>
           </h1>
           
           <div 
@@ -67,9 +67,9 @@ const Hero = () => {
             <span className="text-sm text-muted-foreground uppercase tracking-wider">Find me on</span>
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "https://github.com/johnson98101", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/devin-patterson-153356169", label: "LinkedIn" },
-                { icon: FileText, href: "https://jumpshare.com/share/daw8G5uTgxeowhJJhmkB", label: "Resume" },
+                { icon: Github, href: "https://github.com/jonathankinggold", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/jonathan-king-101b573a1/", label: "LinkedIn" },
+                { icon: FileText, href: "https://jumpshare.com/share/3G0kFninPsVmdvG7TLtY", label: "Resume" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}

@@ -2,30 +2,30 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "Stellar Labs",
-    role: "Senior Full-Stack Developer",
-    period: "2022 - Present",
+    company: "Self-employed",
+    role: "Senior Full Stack Developer",
+    period: "2025.02 - Present",
     description:
-      "Leading development of cloud-native applications serving 2M+ users. Architecting microservices, mentoring junior developers, and driving technical decisions.",
-    technologies: ["React", "Node.js", "AWS", "PostgreSQL"],
+      "Designed and delivered custom web applications for startups, agencies, and small businesses. Developed RESTful and GraphQL APIs using Python (Django, FastAPI), Node.js (Express, NestJS), C# (.NET), and PHP (Laravel). Built responsive UIs with React, designed databases, implemented auth systems, and deployed using Docker and cloud infrastructure.",
+    technologies: ["Python", "Django", "FastAPI", "Node.js", "React", "Docker", "AWS"],
     current: true,
   },
   {
-    company: "NovaTech Solutions",
-    role: "Full-Stack Developer",
-    period: "2020 - 2022",
+    company: "Speed Gamba",
+    role: "Software Developer",
+    period: "2022.02 - 2024.11",
     description:
-      "Built and maintained multiple client-facing applications. Reduced load times by 40% through performance optimization and implemented CI/CD pipelines.",
-    technologies: ["Vue.js", "Python", "Docker", "MongoDB"],
+      "Contributed to the development of multiple web-based products. Built backend services using Python and PHP, developing APIs for frontend consumption and implementing business logic for real-time data processing. Optimized database queries and modernized codebase for better scalability.",
+    technologies: ["Python", "PHP", "PostgreSQL", "REST APIs"],
     current: false,
   },
   {
-    company: "CodeCraft Agency",
-    role: "Frontend Developer",
-    period: "2018 - 2020",
+    company: "Water Babies Global",
+    role: "Back End Developer",
+    period: "2020.05 - 2021.12",
     description:
-      "Developed responsive web applications for startups and enterprises. Collaborated closely with designers to deliver pixel-perfect interfaces.",
-    technologies: ["React", "TypeScript", "Sass", "Firebase"],
+      "Built and enhanced web applications for clients across different industries. Focused on backend development using Python and C#, designing database schemas, implementing authentication systems, and building internal tools. Collaborated in an agile environment with cross-functional teams.",
+    technologies: ["Python", "C#", ".NET", "MySQL"],
     current: false,
   },
 ];

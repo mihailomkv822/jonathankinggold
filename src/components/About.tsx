@@ -35,15 +35,15 @@ const About = () => {
                     <span className="text-cyan-400">{"{"}</span>
                   </div>
                   <div className="pl-4 space-y-1">
-                    <div><span className="text-purple-400">name:</span> <span className="text-amber-300">'Alex Chen'</span>,</div>
+                    <div><span className="text-purple-400">name:</span> <span className="text-amber-300">'Jonathan King'</span>,</div>
                     <div><span className="text-purple-400">role:</span> <span className="text-amber-300">'Full-Stack Dev'</span>,</div>
                     <div><span className="text-purple-400">loves:</span> <span className="text-cyan-400">[</span></div>
                     <div className="pl-4">
-                      <span className="text-amber-300">'React'</span>,
-                      <span className="text-amber-300"> 'TypeScript'</span>,
+                      <span className="text-amber-300">'Python'</span>,
+                      <span className="text-amber-300"> 'Node.js'</span>,
                     </div>
                     <div className="pl-4">
-                      <span className="text-amber-300">'Building Cool Stuff'</span>
+                      <span className="text-amber-300">'Building Scalable Apps'</span>
                     </div>
                     <div><span className="text-cyan-400">]</span>,</div>
                     <div><span className="text-purple-400">status:</span> <span className="text-primary">'ready_to_code'</span></div>
@@ -71,16 +71,16 @@ const About = () => {
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Hey there! I'm a developer who believes that great code should feel like poetry—elegant, 
-                purposeful, and maybe a little dramatic. 
+                Full Stack Developer with several years of experience building, maintaining, and scaling web 
+                applications using Python, Node.js, C#, and PHP.
               </p>
               <p>
-                With 5+ years of experience building web applications, I've learned that the best products 
-                come from obsessing over the details while never losing sight of the big picture.
+                Strong background in backend development, API design, database architecture, and frontend 
+                integration. Experienced in remote work environments, collaborating with cross-functional 
+                teams, and delivering production-ready solutions aligned with business objectives.
               </p>
               <p>
-                When I'm not pushing pixels or debugging at 2 AM, you'll find me exploring indie games, 
-                discovering new music, or attempting to make the perfect pour-over coffee.
+                Bachelor's degree from Purdue University (2016-2020).
               </p>
             </div>
             
