@@ -69,7 +69,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
 
   return (
-    <section id="projects" className="py-32 px-6 lg:px-16 relative">
+    <section id="projects" className="py-20 px-6 lg:px-16 relative">
       {/* Section header */}
       <div className="max-w-6xl mx-auto mb-20">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">

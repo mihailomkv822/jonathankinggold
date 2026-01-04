@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 px-6 lg:px-16 relative overflow-hidden">
+    <section id="contact" className="py-20 px-6 lg:px-16 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
       

@@ -32,7 +32,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-32 px-6 lg:px-16 relative">
+    <section id="experience" className="py-20 px-6 lg:px-16 relative">
       {/* Background decoration */}
       <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
 
