@@ -79,9 +79,6 @@ const About = () => {
                 integration. Experienced in remote work environments, collaborating with cross-functional 
                 teams, and delivering production-ready solutions aligned with business objectives.
               </p>
-              <p>
-                Bachelor's degree from Purdue University (2016-2020).
-              </p>
             </div>
             
             {/* Personality traits */}

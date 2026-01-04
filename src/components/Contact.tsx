@@ -69,7 +69,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  placeholder="John Doe"
+                  placeholder="Jonathan King"
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground"
                 />
               </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  placeholder="john@example.com"
+                  placeholder="redditbetit98@gmail.com"
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground"
                 />
               </div>
