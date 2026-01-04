@@ -38,7 +38,7 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:hello@alexchen.dev" 
+                  href="mailto:redditbetit98@gmail.com" 
                   className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-secondary transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
@@ -46,7 +46,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email me at</p>
-                    <p className="font-medium">hello@alexchen.dev</p>
+                    <p className="font-medium">redditbetit98@gmail.com</p>
                   </div>
                 </a>
                 
@@ -56,7 +56,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Based in</p>
-                    <p className="font-medium">San Francisco, CA</p>
+                    <p className="font-medium">Williamsport, PA</p>
                   </div>
                 </div>
               </div>
