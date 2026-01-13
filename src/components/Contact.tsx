@@ -38,7 +38,7 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:redditbetit98@gmail.com" 
+                  href="mailto:jonathanking97@proton.me" 
                   className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-secondary transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
@@ -46,7 +46,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email me at</p>
-                    <p className="font-medium">redditbetit98@gmail.com</p>
+                    <p className="font-medium">jonathanking97@proton.me</p>
                   </div>
                 </a>
                 
@@ -69,7 +69,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  placeholder="Jonathan King"
+                  placeholder="Your Name"
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground"
                 />
               </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  placeholder="redditbetit98@gmail.com"
+                  placeholder="Your Email"
                   className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground"
                 />
               </div>
