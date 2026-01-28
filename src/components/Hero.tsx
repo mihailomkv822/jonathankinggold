@@ -68,8 +68,8 @@ const Hero = () => {
             <div className="flex gap-4">
               {[
                 { icon: Github, href: "https://github.com/jonathankinggold", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/jonathan-king-101b573a1/", label: "LinkedIn" },
-                { icon: FileText, href: "https://jumpshare.com/share/3G0kFninPsVmdvG7TLtY", label: "Resume" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/sean-walker-a86572176/", label: "LinkedIn" },
+                { icon: FileText, href: "https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing", label: "Resume" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
