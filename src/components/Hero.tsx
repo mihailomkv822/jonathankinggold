@@ -32,7 +32,7 @@ const Hero = () => {
             style={{ animationDelay: "0.3s" }}
           >
             <span className="block text-foreground">I'm</span>
-            <span className="block text-gradient glow-text">Jonathan King</span>
+            <span className="block text-gradient glow-text">Sean Walker</span>
           </h1>
           
           <div 

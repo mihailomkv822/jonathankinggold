@@ -35,7 +35,7 @@ const About = () => {
                     <span className="text-cyan-400">{"{"}</span>
                   </div>
                   <div className="pl-4 space-y-1">
-                    <div><span className="text-purple-400">name:</span> <span className="text-amber-300">'Jonathan King'</span>,</div>
+                    <div><span className="text-purple-400">name:</span> <span className="text-amber-300">'Sean Walker'</span>,</div>
                     <div><span className="text-purple-400">role:</span> <span className="text-amber-300">'Full-Stack Dev'</span>,</div>
                     <div><span className="text-purple-400">loves:</span> <span className="text-cyan-400">[</span></div>
                     <div className="pl-4">

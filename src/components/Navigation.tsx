@@ -49,7 +49,7 @@ const Navigation = () => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
           >
-            JK<span className="text-primary">.</span>
+            SW<span className="text-primary">.</span>
           </a>
 
           {/* Desktop navigation */}

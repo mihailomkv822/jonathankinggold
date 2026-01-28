@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo / Name */}
           <div className="font-display text-2xl font-bold">
-            JK<span className="text-primary">.</span>
+            SW<span className="text-primary">.</span>
           </div>
           
           {/* Social links */}
@@ -34,7 +34,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Jonathan King. Made with <Heart className="w-4 h-4 text-primary fill-primary" /> and lots of coffee.
+            © {currentYear} Sean Walker. Made with <Heart className="w-4 h-4 text-primary fill-primary" /> and lots of coffee.
           </p>
         </div>
       </div>
