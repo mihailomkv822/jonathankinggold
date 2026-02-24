@@ -9,15 +9,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo / Name */}
           <div className="font-display text-2xl font-bold">
-            SW<span className="text-primary">.</span>
+            AM<span className="text-primary">.</span>
           </div>
           
           {/* Social links */}
           <div className="flex gap-4">
             {[
-              { icon: Github, href: "https://github.com/jonathankinggold", label: "GitHub" },
-              { icon: Linkedin, href: "https://www.linkedin.com/in/sean-walker-a86572176/", label: "LinkedIn" },
-              { icon: FileText, href: "https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing", label: "Resume" },
+              { icon: Github, href: "https://github.com", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com", label: "LinkedIn" },
+              { icon: FileText, href: "#", label: "Resume" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
@@ -34,7 +34,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Sean Walker. Made with <Heart className="w-4 h-4 text-primary fill-primary" /> and lots of coffee.
+            © {currentYear} Austin Mullins. Made with <Heart className="w-4 h-4 text-primary fill-primary" /> and lots of coffee.
           </p>
         </div>
       </div>

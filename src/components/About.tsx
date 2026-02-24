@@ -30,20 +30,20 @@ const About = () => {
                 <div className="font-mono text-sm text-muted-foreground space-y-2 w-full">
                   <div className="flex items-center gap-2">
                     <span className="text-primary">const</span>
-                    <span className="text-foreground">developer</span>
+                    <span className="text-foreground">engineer</span>
                     <span className="text-muted-foreground">=</span>
                     <span className="text-cyan-400">{"{"}</span>
                   </div>
                   <div className="pl-4 space-y-1">
-                    <div><span className="text-purple-400">name:</span> <span className="text-amber-300">'Sean Walker'</span>,</div>
-                    <div><span className="text-purple-400">role:</span> <span className="text-amber-300">'Full-Stack Dev'</span>,</div>
+                    <div><span className="text-purple-400">name:</span> <span className="text-amber-300">'Austin Mullins'</span>,</div>
+                    <div><span className="text-purple-400">role:</span> <span className="text-amber-300">'Sr. Full Stack Eng'</span>,</div>
                     <div><span className="text-purple-400">loves:</span> <span className="text-cyan-400">[</span></div>
                     <div className="pl-4">
-                      <span className="text-amber-300">'Python'</span>,
-                      <span className="text-amber-300"> 'Node.js'</span>,
+                      <span className="text-amber-300">'React'</span>,
+                      <span className="text-amber-300"> 'TypeScript'</span>,
                     </div>
                     <div className="pl-4">
-                      <span className="text-amber-300">'Building Scalable Apps'</span>
+                      <span className="text-amber-300">'Scaling SaaS Platforms'</span>
                     </div>
                     <div><span className="text-cyan-400">]</span>,</div>
                     <div><span className="text-purple-400">status:</span> <span className="text-primary">'ready_to_code'</span></div>
@@ -65,19 +65,19 @@ const About = () => {
               <span className="text-primary font-display uppercase tracking-widest text-sm">About Me</span>
               <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">
                 Not your typical 
-                <span className="text-gradient"> developer.</span>
+                <span className="text-gradient"> engineer.</span>
               </h2>
             </div>
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                Full Stack Developer with several years of experience building, maintaining, and scaling web 
-                applications using Python, Node.js, C#, and PHP.
+                Senior Full Stack Engineer with 10+ years of experience designing and scaling SaaS platforms, 
+                mobile applications, and cloud-native systems.
               </p>
               <p>
-                Strong background in backend development, API design, database architecture, and frontend 
-                integration. Experienced in remote work environments, collaborating with cross-functional 
-                teams, and delivering production-ready solutions aligned with business objectives.
+                Deep expertise in React, TypeScript, Node.js, Python, and PostgreSQL, with strong experience 
+                in AWS infrastructure and DevOps automation. Proven track record of delivering production-grade 
+                systems with high availability, strong performance, and clean architecture.
               </p>
             </div>
             

@@ -2,30 +2,39 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "Self-employed",
-    role: "Senior Full Stack Developer",
-    period: "2025.02 - Present",
+    company: "AutoPlayAI",
+    role: "Senior Full Stack AI Engineer",
+    period: "2024.02 - 2025.12",
     description:
-      "Designed and delivered custom web applications for startups, agencies, and small businesses. Developed RESTful and GraphQL APIs using Python (Django, FastAPI), Node.js (Express, NestJS), C# (.NET), and PHP (Laravel). Built responsive UIs with React, designed databases, implemented auth systems, and deployed using Docker and cloud infrastructure.",
-    technologies: ["Python", "Django", "FastAPI", "Node.js", "React", "Docker", "AWS"],
-    current: true,
-  },
-  {
-    company: "Speed Gamba",
-    role: "Software Developer",
-    period: "2022.02 - 2024.11",
-    description:
-      "Contributed to the development of multiple web-based products. Built backend services using Python and PHP, developing APIs for frontend consumption and implementing business logic for real-time data processing. Optimized database queries and modernized codebase for better scalability.",
-    technologies: ["Python", "PHP", "PostgreSQL", "REST APIs"],
+      "Architected and delivered a multi-tenant SaaS platform using React, TypeScript, Node.js, Python (FastAPI), and PostgreSQL. Designed RESTful APIs and microservices with asynchronous processing. Built scalable backend services with optimized database indexing and Redis caching, reducing API response times by 35%. Designed cloud-native infrastructure on AWS with Terraform-based IaC.",
+    technologies: ["React", "TypeScript", "Node.js", "Python", "FastAPI", "PostgreSQL", "AWS", "Docker", "Terraform"],
     current: false,
   },
   {
-    company: "Water Babies Global",
-    role: "Back End Developer",
-    period: "2020.05 - 2021.12",
+    company: "Glorium Technologies",
+    role: "Full Stack Developer",
+    period: "2022.01 - 2023.12",
     description:
-      "Built and enhanced web applications for clients across different industries. Focused on backend development using Python and C#, designing database schemas, implementing authentication systems, and building internal tools. Collaborated in an agile environment with cross-functional teams.",
-    technologies: ["Python", "C#", ".NET", "MySQL"],
+      "Developed high-availability backend systems using Python (Flask), Ruby on Rails, and PostgreSQL supporting millions of transactional events annually. Optimized SQL queries and implemented indexing strategies improving throughput by 30%. Built scalable React + TypeScript frontend modules with SSR and performance optimizations.",
+    technologies: ["Python", "Flask", "Ruby on Rails", "React", "TypeScript", "PostgreSQL", "Redis", "AWS"],
+    current: false,
+  },
+  {
+    company: "DedSec Tech",
+    role: "Senior Web & Mobile Developer",
+    period: "2020.03 - 2022.12",
+    description:
+      "Led development of a full-stack SaaS platform using Node.js, Express, TypeScript, React, and PostgreSQL. Built cross-platform mobile experiences using React Native and Flutter. Implemented secure payment integrations and Docker-based containerization. Enhanced observability with structured logging and monitoring dashboards.",
+    technologies: ["Node.js", "Express", "React", "React Native", "Flutter", "TypeScript", "PostgreSQL", "Docker"],
+    current: false,
+  },
+  {
+    company: "Tech Startup",
+    role: "Web Developer Intern",
+    period: "2017.03 - 2019.10",
+    description:
+      "Assisted in building responsive web applications using HTML5, CSS3, JavaScript, and React. Collaborated with senior developers to develop interactive UI components and integrate APIs. Optimized website performance, accessibility, and cross-browser compatibility.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "React", "Git"],
     current: false,
   },
 ];

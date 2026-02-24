@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="mb-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <span className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full text-sm text-muted-foreground">
             <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Available for freelance work
+            Available for new opportunities
           </span>
         </div>
         
@@ -32,7 +32,7 @@ const Hero = () => {
             style={{ animationDelay: "0.3s" }}
           >
             <span className="block text-foreground">I'm</span>
-            <span className="block text-gradient glow-text">Sean Walker</span>
+            <span className="block text-gradient glow-text">Austin Mullins</span>
           </h1>
           
           <div 
@@ -40,8 +40,8 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <p className="text-xl md:text-2xl text-muted-foreground font-light leading-relaxed">
-              A <span className="text-foreground font-medium">full-stack developer</span> who turns caffeine into code and ideas into 
-              <span className="text-primary"> pixel-perfect</span> digital experiences.
+              A <span className="text-foreground font-medium">Senior Full Stack Engineer</span> with 10+ years of experience designing and scaling
+              <span className="text-primary"> SaaS platforms</span> and cloud-native systems.
             </p>
           </div>
           
@@ -67,9 +67,9 @@ const Hero = () => {
             <span className="text-sm text-muted-foreground uppercase tracking-wider">Find me on</span>
             <div className="flex gap-4">
               {[
-                { icon: Github, href: "https://github.com/jonathankinggold", label: "GitHub" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/sean-walker-a86572176/", label: "LinkedIn" },
-                { icon: FileText, href: "https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing", label: "Resume" },
+                { icon: Github, href: "https://github.com", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com", label: "LinkedIn" },
+                { icon: FileText, href: "https://docs.google.com", label: "Resume" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}

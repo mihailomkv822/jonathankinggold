@@ -1,19 +1,19 @@
 const skillCategories = [
   {
     title: "Frontend",
-    skills: ["React", "JavaScript", "HTML", "CSS", "GraphQL"],
+    skills: ["React", "React Native", "Vue.js", "Next.js", "Angular", "TypeScript", "JavaScript", "Redux", "Tailwind CSS", "HTML5", "CSS3/SASS"],
     color: "from-primary/20 to-cyan-500/20",
     borderColor: "border-primary/30",
   },
   {
-    title: "Backend",
-    skills: ["Python", "Django", "Flask", "FastAPI", "Node.js", "Express", "C#", ".NET", "ASP.NET Core", "PHP", "Laravel"],
+    title: "Backend & AI/ML",
+    skills: ["Python", "Flask", "FastAPI", "Node.js", "Express.js", "NestJS", "Ruby on Rails", "REST APIs", "GraphQL", "OpenAI API", "LangChain", "TensorFlow"],
     color: "from-purple-500/20 to-pink-500/20",
     borderColor: "border-purple-500/30",
   },
   {
-    title: "Database & DevOps",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Docker", "AWS", "Git", "REST APIs"],
+    title: "Database & Cloud/DevOps",
+    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Elasticsearch", "AWS", "Docker", "Kubernetes", "Terraform", "CI/CD", "Git"],
     color: "from-amber-500/20 to-orange-500/20",
     borderColor: "border-amber-500/30",
   },

@@ -1,4 +1,4 @@
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Contact = () => {
@@ -38,7 +38,7 @@ const Contact = () => {
               
               <div className="space-y-4">
                 <a 
-                  href="mailto:jonathanking97@proton.me" 
+                  href="mailto:austinmullins69@outlook.com" 
                   className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-secondary transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
@@ -46,7 +46,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Email me at</p>
-                    <p className="font-medium">jonathanking97@proton.me</p>
+                    <p className="font-medium">austinmullins69@outlook.com</p>
+                  </div>
+                </a>
+
+                <a 
+                  href="tel:3393652940" 
+                  className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-secondary transition-colors group"
+                >
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                    <Phone className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Call me at</p>
+                    <p className="font-medium">(339) 365-2940</p>
                   </div>
                 </a>
                 
@@ -56,7 +69,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground">Based in</p>
-                    <p className="font-medium">Williamsport, PA</p>
+                    <p className="font-medium">Mount Carmel, TN</p>
                   </div>
                 </div>
               </div>
