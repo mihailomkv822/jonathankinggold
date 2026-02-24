@@ -36,35 +36,35 @@ const Education = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <GraduationCap className="w-6 h-6 text-primary" />
                   <h3 className="font-display text-xl md:text-2xl font-bold">
-                    Bachelor's Degree
+                    Bachelor's Degree in Information Technology
                   </h3>
                 </div>
                 <div className="flex items-center gap-2 text-primary">
-                  <span className="font-medium">Purdue University</span>
+                  <span className="font-medium">Trevecca Nazarene University</span>
                 </div>
               </div>
 
               <div className="flex flex-col gap-2 text-muted-foreground text-sm">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" />
-                  <span>2016 - 2020</span>
+                  <span>2015 - 2017</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>West Lafayette, IN</span>
+                  <span>Nashville, TN</span>
                 </div>
               </div>
             </div>
 
             <p className="text-muted-foreground leading-relaxed">
-              Completed a comprehensive computer science curriculum with focus on software engineering, 
-              data structures, algorithms, and web development. Built a strong foundation in programming 
-              principles and collaborative project work that prepared me for a career in full-stack development.
+              Completed a comprehensive information technology curriculum with focus on software development, 
+              systems administration, and web technologies. Built a strong foundation in programming 
+              principles and collaborative project work that prepared me for a career in full-stack engineering.
             </p>
 
             {/* Key subjects */}
             <div className="flex flex-wrap gap-2 mt-6">
-              {["Computer Science", "Software Engineering", "Data Structures", "Algorithms", "Web Development"].map((subject) => (
+              {["Information Technology", "Software Development", "Web Technologies", "Systems Administration", "Database Management"].map((subject) => (
                 <span
                   key={subject}
                   className="px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full"
