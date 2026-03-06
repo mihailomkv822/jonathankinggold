@@ -2,76 +2,30 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 
 const Education = () => {
   return (
-    <section id="education" className="py-20 px-6 lg:px-16 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      
-      <div className="max-w-6xl mx-auto relative">
-        {/* Section header */}
-        <div className="mb-20 space-y-4">
-          <span className="text-primary font-display uppercase tracking-widest text-sm">
-            Education
-          </span>
-          <h2 className="font-display text-4xl md:text-6xl font-bold">
-            Academic
-            <span className="text-gradient"> Background</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-xl">
-            The foundation that shaped my technical skills and problem-solving approach.
-          </p>
-        </div>
+    <section id="education" className="py-24 px-6 lg:px-12 relative overflow-hidden">
+      <div className="max-w-5xl mx-auto relative">
+        <h2 className="numbered-heading mb-12">Education</h2>
 
-        {/* Education card */}
-        <div className="relative pl-8 md:pl-20">
-          {/* Timeline line */}
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent" />
-          
-          {/* Timeline dot */}
-          <div className="absolute left-0 md:left-8 top-2 w-4 h-4 -translate-x-1/2 rounded-full border-2 bg-primary border-primary shadow-[0_0_20px_hsl(78_100%_61%/0.5)]" />
-
-          {/* Content card */}
-          <div className="bg-card rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 transition-all duration-300 hover-lift">
-            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-              <div>
-                <div className="flex items-center gap-3 mb-2">
-                  <GraduationCap className="w-6 h-6 text-primary" />
-                  <h3 className="font-display text-xl md:text-2xl font-bold">
-                    Bachelor's Degree in Information Technology
-                  </h3>
-                </div>
-                <div className="flex items-center gap-2 text-primary">
-                  <span className="font-medium">Trevecca Nazarene University</span>
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2 text-muted-foreground text-sm">
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
-                  <span>2015 - 2017</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <MapPin className="w-4 h-4" />
-                  <span>Nashville, TN</span>
-                </div>
-              </div>
+        <div className="bg-card p-8 rounded-lg border border-border/30 hover:border-primary/30 transition-all duration-300 max-w-2xl">
+          <div className="flex items-start gap-4">
+            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+              <GraduationCap className="w-6 h-6 text-primary" />
             </div>
-
-            <p className="text-muted-foreground leading-relaxed">
-              Completed a comprehensive information technology curriculum with focus on software development, 
-              systems administration, and web technologies. Built a strong foundation in programming 
-              principles and collaborative project work that prepared me for a career in full-stack engineering.
-            </p>
-
-            {/* Key subjects */}
-            <div className="flex flex-wrap gap-2 mt-6">
-              {["Information Technology", "Software Development", "Web Technologies", "Systems Administration", "Database Management"].map((subject) => (
-                <span
-                  key={subject}
-                  className="px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full"
-                >
-                  {subject}
+            <div>
+              <h3 className="font-display text-xl font-semibold text-foreground mb-1">
+                Bachelor's Degree in Information Technology
+              </h3>
+              <p className="text-primary font-medium mb-3">Trevecca Nazarene University</p>
+              <div className="flex flex-wrap gap-4 text-sm text-muted-foreground font-mono">
+                <span className="flex items-center gap-1.5">
+                  <Calendar className="w-3.5 h-3.5" />
+                  2015 – 2017
                 </span>
-              ))}
+                <span className="flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5" />
+                  Nashville, TN
+                </span>
+              </div>
             </div>
           </div>
         </div>

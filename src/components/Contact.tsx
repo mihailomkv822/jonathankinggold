@@ -1,118 +1,28 @@
-import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 lg:px-16 relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
-      
-      <div className="max-w-4xl mx-auto relative">
-        {/* Section header */}
-        <div className="text-center mb-16 space-y-4">
-          <span className="text-primary font-display uppercase tracking-widest text-sm">Get In Touch</span>
-          <h2 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold">
-            Let's Create
-            <span className="text-gradient"> Something</span>
-            <br />Amazing Together
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Have a project in mind? Let's talk about it. I'm always open to discussing new opportunities.
-          </p>
-        </div>
-        
-        {/* Contact card */}
-        <div className="bg-card rounded-3xl p-8 md:p-12 border border-border/50 relative overflow-hidden">
-          {/* Decorative corner */}
-          <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-bl-full" />
-          
-          <div className="grid md:grid-cols-2 gap-12 relative">
-            {/* Left side - Info */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-display text-2xl font-bold mb-2">Let's connect</h3>
-                <p className="text-muted-foreground">
-                  Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                </p>
-              </div>
-              
-              <div className="space-y-4">
-                <a 
-                  href="mailto:austinmullins69@outlook.com" 
-                  className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-secondary transition-colors group"
-                >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <Mail className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Email me at</p>
-                    <p className="font-medium">austinmullins69@outlook.com</p>
-                  </div>
-                </a>
+    <section id="contact" className="py-24 px-6 lg:px-12 relative overflow-hidden">
+      <div className="max-w-2xl mx-auto relative text-center">
+        <p className="font-mono text-primary text-sm mb-4">05. What's Next?</p>
+        <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+          Get In Touch
+        </h2>
+        <p className="text-muted-foreground text-lg leading-relaxed mb-12">
+          Whether you have a question or just want to say hi, my inbox is always open.
+          I'm currently looking for new opportunities and would love to hear from you!
+        </p>
 
-                <a 
-                  href="tel:3393652940" 
-                  className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl hover:bg-secondary transition-colors group"
-                >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                    <Phone className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Call me at</p>
-                    <p className="font-medium">(339) 365-2940</p>
-                  </div>
-                </a>
-                
-                <div className="flex items-center gap-4 p-4 bg-secondary/50 rounded-xl">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Based in</p>
-                    <p className="font-medium">Mount Carmel, TN</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right side - Form */}
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-              <div className="space-y-2">
-                <label htmlFor="name" className="text-sm font-medium">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  placeholder="Your Name"
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <label htmlFor="email" className="text-sm font-medium">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Your Email"
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium">Message</label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  placeholder="Tell me about your project..."
-                  className="w-full px-4 py-3 bg-secondary/50 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all placeholder:text-muted-foreground resize-none"
-                />
-              </div>
-              
-              <Button variant="hero" className="w-full">
-                Send Message
-                <Send className="w-5 h-5" />
-              </Button>
-            </form>
-          </div>
+        <a href="mailto:austinmullins69@outlook.com">
+          <Button variant="outline" size="lg" className="font-mono text-sm px-10 py-6">
+            Say Hello
+          </Button>
+        </a>
+
+        <div className="mt-12 flex flex-col items-center gap-2 text-muted-foreground font-mono text-sm">
+          <span>austinmullins69@outlook.com</span>
+          <span>+1 (831) 756-8859</span>
+          <span>Mount Carmel, TN</span>
         </div>
       </div>
     </section>

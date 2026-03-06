@@ -1,41 +1,34 @@
-import { Github, Heart, FileText } from "lucide-react";
+import { Github, FileText } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
-    <footer className="py-12 px-6 lg:px-16 border-t border-border/50">
-      <div className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Logo / Name */}
-          <div className="font-display text-2xl font-bold">
-            AM<span className="text-primary">.</span>
-          </div>
-          
-          {/* Social links */}
-          <div className="flex gap-4">
-            {[
-              { icon: Github, href: "https://github.com/austinmudev", label: "GitHub" },
-              { icon: FileText, href: "https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing", label: "Resume" },
-            ].map(({ icon: Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-lg text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
-                aria-label={label}
-              >
-                <Icon className="w-5 h-5" />
-              </a>
-            ))}
-          </div>
-          
-          {/* Copyright */}
-          <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Austin Mullins. Made with <Heart className="w-4 h-4 text-primary fill-primary" /> and lots of coffee.
-          </p>
+    <footer className="py-8 px-6 lg:px-12">
+      <div className="max-w-5xl mx-auto">
+        {/* Social icons - mobile only, desktop uses side elements */}
+        <div className="flex justify-center gap-6 mb-6">
+          <a
+            href="https://github.com/austinmudev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300"
+            aria-label="GitHub"
+          >
+            <Github className="w-5 h-5" />
+          </a>
+          <a
+            href="https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300"
+            aria-label="Resume"
+          >
+            <FileText className="w-5 h-5" />
+          </a>
         </div>
+
+        <p className="text-center font-mono text-xs text-muted-foreground hover:text-primary transition-colors">
+          Built by Austin Mullins
+        </p>
       </div>
     </footer>
   );

@@ -1,130 +1,117 @@
-import { Briefcase, Calendar } from "lucide-react";
+import { useState } from "react";
 
 const experiences = [
   {
     company: "AutoPlayAI",
-    role: "Senior Full Stack AI Engineer",
-    period: "2024.02 - 2025.12",
-    description:
-      "Architected and delivered a multi-tenant SaaS platform using React, TypeScript, Node.js, Python (FastAPI), and PostgreSQL. Designed RESTful APIs and microservices with asynchronous processing. Built scalable backend services with optimized database indexing and Redis caching, reducing API response times by 35%. Designed cloud-native infrastructure on AWS with Terraform-based IaC.",
-    technologies: ["React", "TypeScript", "Node.js", "Python", "FastAPI", "PostgreSQL", "AWS", "Docker", "Terraform"],
-    current: false,
+    shortName: "AutoPlayAI",
+    role: "Senior Full Stack Developer",
+    period: "Feb 2024 – Dec 2025",
+    type: "Full-time",
+    stack: "C# | .Net Framework | .Net Core | Angular | Azure DevOps",
+    bullets: [
+      "Design and develop enterprise applications using C#, ASP.NET MVC, Web API, and WCF across both .NET Framework and .NET Core, and Angular with TypeScript.",
+      "Develop microservices-based solutions and RESTful APIs to create scalable, loosely coupled systems.",
+      "Containerize applications with Docker and manage deployments using Kubernetes for consistent environments and reliable scaling.",
+      "Implement and extend Sitefinity platforms as a certified developer, handling custom modules and integrations with legacy systems.",
+      "Build and manage CI/CD pipelines in Azure DevOps with automated testing and zero-downtime deployments.",
+      "Lead migrations to Azure services including App Services, Functions, Storage, and Key Vault.",
+      "Tune SQL Server performance through data modeling and development of efficient stored procedures and indexes.",
+    ],
   },
   {
     company: "Glorium Technologies",
-    role: "Full Stack Developer",
-    period: "2022.01 - 2023.12",
-    description:
-      "Developed high-availability backend systems using Python (Flask), Ruby on Rails, and PostgreSQL supporting millions of transactional events annually. Optimized SQL queries and implemented indexing strategies improving throughput by 30%. Built scalable React + TypeScript frontend modules with SSR and performance optimizations.",
-    technologies: ["Python", "Flask", "Ruby on Rails", "React", "TypeScript", "PostgreSQL", "Redis", "AWS"],
-    current: false,
+    shortName: "Glorium",
+    role: "Full Stack C# Developer",
+    period: "Jan 2022 – Dec 2023",
+    type: "Contract",
+    stack: ".Net Framework | Javascript | React | SQL Server",
+    bullets: [
+      "Led full-stack growth work focused on improving acquisition, conversion, activation, and retention across web and email.",
+      "Built personalization and lifecycle messaging features using C#, ASP.NET Core, and React/Redux with TypeScript.",
+      "Developed scalable .NET 6/8 backend services supporting millions of transactions with Redis caching and Application Insights.",
+      "Deployed to Azure App Services with ARM/Bicep, secured secrets via Key Vault, and maintained CI/CD pipelines.",
+      "Collaborated with product and data teams on A/B testing and ML-driven recommendations.",
+    ],
   },
   {
     company: "DedSec Tech",
+    shortName: "DedSec",
     role: "Senior Web & Mobile Developer",
-    period: "2020.03 - 2022.12",
-    description:
-      "Led development of a full-stack SaaS platform using Node.js, Express, TypeScript, React, and PostgreSQL. Built cross-platform mobile experiences using React Native and Flutter. Implemented secure payment integrations and Docker-based containerization. Enhanced observability with structured logging and monitoring dashboards.",
-    technologies: ["Node.js", "Express", "React", "React Native", "Flutter", "TypeScript", "PostgreSQL", "Docker"],
-    current: false,
+    period: "Mar 2020 – Dec 2022",
+    type: "Full-time",
+    stack: "ASP.NET | React | VB.NET | EF",
+    bullets: [
+      "Developed enterprise-level systems using ASP.NET MVC, Entity Framework, C#, Razor, React, Redux, Ajax, and JSON.",
+      "Led the design and development of enterprise-level VB.NET applications using Visual Studio.",
+      "Implemented complex business logic and algorithms, enhancing functionality and performance of critical applications.",
+      "Conducted thorough code reviews and provided technical guidance to a team of developers.",
+      "Collaborated with cross-functional teams to translate requirements into well-structured technical specifications.",
+    ],
   },
   {
     company: "Tech Startup",
+    shortName: "Startup",
     role: "Web Developer Intern",
-    period: "2017.03 - 2019.10",
-    description:
-      "Assisted in building responsive web applications using HTML5, CSS3, JavaScript, and React. Collaborated with senior developers to develop interactive UI components and integrate APIs. Optimized website performance, accessibility, and cross-browser compatibility.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "React", "Git"],
-    current: false,
+    period: "Mar 2017 – Oct 2019",
+    type: "Part-time",
+    stack: ".NET 4 Framework | React",
+    bullets: [
+      "Developed and deployed applications using .NET 4 Framework and React based on business unit requirements.",
+      "Provided technical support for vendor selection, deployment, and interface tools.",
+      "Built reports from various databases and reporting tools.",
+      "Collaborated with web designers and business units for web application development.",
+    ],
   },
 ];
 
 const Experience = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const active = experiences[activeTab];
+
   return (
-    <section id="experience" className="py-20 px-6 lg:px-16 relative">
-      {/* Background decoration */}
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
-
-      <div className="max-w-6xl mx-auto relative">
+    <section id="experience" className="py-24 px-6 lg:px-12 relative">
+      <div className="max-w-4xl mx-auto relative">
         {/* Section header */}
-        <div className="mb-20 space-y-4">
-          <span className="text-primary font-display uppercase tracking-widest text-sm">
-            Career Path
-          </span>
-          <h2 className="font-display text-4xl md:text-6xl font-bold">
-            Where I've
-            <span className="text-gradient"> Worked</span>
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-xl">
-            A journey through the companies that shaped my skills and perspective.
-          </p>
-        </div>
+        <h2 className="numbered-heading mb-12">Where I've Worked</h2>
 
-        {/* Timeline */}
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-0 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent" />
-
-          <div className="space-y-12">
+        {/* Tabbed experience */}
+        <div className="flex flex-col md:flex-row gap-0 md:gap-8">
+          {/* Tab buttons */}
+          <div className="flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l-0 md:min-w-[160px] shrink-0">
             {experiences.map((exp, index) => (
-              <div
+              <button
                 key={exp.company}
-                className="relative pl-8 md:pl-20 group"
-                style={{ animationDelay: `${index * 0.2}s` }}
+                onClick={() => setActiveTab(index)}
+                className={`tab-button whitespace-nowrap ${
+                  activeTab === index ? "active" : ""
+                }`}
               >
-                {/* Timeline dot */}
-                <div
-                  className={`absolute left-0 md:left-8 top-2 w-4 h-4 -translate-x-1/2 rounded-full border-2 transition-all duration-300 ${
-                    exp.current
-                      ? "bg-primary border-primary shadow-[0_0_20px_hsl(78_100%_61%/0.5)]"
-                      : "bg-background border-muted-foreground group-hover:border-primary group-hover:bg-primary/20"
-                  }`}
-                />
-
-                {/* Content card */}
-                <div className="bg-card rounded-2xl p-6 md:p-8 border border-border/50 hover:border-primary/30 transition-all duration-300 hover-lift">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <h3 className="font-display text-xl md:text-2xl font-bold">
-                          {exp.role}
-                        </h3>
-                        {exp.current && (
-                          <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full uppercase tracking-wider">
-                            Current
-                          </span>
-                        )}
-                      </div>
-                      <div className="flex items-center gap-2 text-primary">
-                        <Briefcase className="w-4 h-4" />
-                        <span className="font-medium">{exp.company}</span>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center gap-2 text-muted-foreground text-sm">
-                      <Calendar className="w-4 h-4" />
-                      <span>{exp.period}</span>
-                    </div>
-                  </div>
-
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {exp.description}
-                  </p>
-
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-secondary text-secondary-foreground text-xs font-medium rounded-full"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
+                {exp.shortName}
+              </button>
             ))}
+          </div>
+
+          {/* Tab content */}
+          <div className="pt-6 md:pt-0 min-h-[400px]">
+            <h3 className="font-display text-xl font-semibold text-foreground mb-1">
+              {active.role}{" "}
+              <span className="text-primary">@ {active.company}</span>
+            </h3>
+            <p className="font-mono text-sm text-muted-foreground mb-1">
+              {active.period} · {active.type}
+            </p>
+            <p className="font-mono text-xs text-muted-foreground/70 mb-6">
+              {active.stack}
+            </p>
+
+            <ul className="space-y-4">
+              {active.bullets.map((bullet, i) => (
+                <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
+                  <span className="text-primary mt-1.5 shrink-0">▹</span>
+                  <span>{bullet}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
