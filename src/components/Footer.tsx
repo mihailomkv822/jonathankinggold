@@ -7,7 +7,7 @@ const Footer = () => {
         {/* Social icons - mobile only, desktop uses side elements */}
         <div className="flex justify-center gap-6 mb-6">
           <a
-            href="https://github.com/austinmudev"
+            href="https://github.com/realdev71"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300"
