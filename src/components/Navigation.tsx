@@ -63,7 +63,7 @@ const Navigation = () => {
               </button>
             ))}
             <a
-              href="https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1RNGznXhzWpsJVxgO_YYYKDLLmV8WJU9MFezSvajQbA4/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
