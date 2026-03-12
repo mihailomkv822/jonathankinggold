@@ -15,7 +15,7 @@ const SideElements = () => {
           <Github className="w-5 h-5" />
         </a>
         <a
-          href="https://docs.google.com/document/d/1MaspKjcD0rNdnUf1-gNpLaGbwgOM2aPWI9Kp43Drg1A/edit?usp=sharing"
+          href="https://docs.google.com/document/d/1RNGznXhzWpsJVxgO_YYYKDLLmV8WJU9MFezSvajQbA4/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-primary hover:-translate-y-1 transition-all duration-300"
